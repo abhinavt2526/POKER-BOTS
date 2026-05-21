@@ -1,0 +1,32 @@
+solving it case by case 
+
+lets take 
+number of persons (n) to be 5
+and let k to be 3 
+and x is the number of contributers
+
+CASE 1 -> (x>k)
+if x=4 ,4 people will contribute and all 5 will get reward 
+now this will not have any  Pure Strategy Nash Equilibrium , because 
+one person has is getting reward without even paying , someone always has an 
+incentive to free ride , so this can never be a stable equilibrium
+
+CASE 2 -> (x=k)
+now x=k=3 , now this is a Pure Strategy Nash Equilibrium , becuase 
+if someone who payed the fee and got reward think like to not pay , they 
+will get into x<k category and then payout will 0 for everyone including him 
+so its better to not move by some , if someone from not paying decides to pay 
+then it becomes the case of x>k , so everyone still gets the same reward , so 
+there is no benfit or profit by person who changed its decision. hence psne
+
+CASE 3 -> (x<k)
+ psne , because unless they x=k people contribute , nobody is gonna get 
+anything , so there is no profit no loss case . 
+
+SUMMARY :
+
+There are two types of pure strategy Nash Equilibria:
+
+Everyone stays out — the good never gets provided, a coordination failure
+Exactly k people contribute — the good gets provided, and every contributor knows they're the deciding vote
+

@@ -1,0 +1,62 @@
+Part 1 : Everyone prefers 1/n of stag over hare
+
+let's take n = 5 hunters,
+ m = 2 (minimum needed for stag),
+ k = 3 (threshold), 
+ and x = number of stag hunters
+
+CASE 1  (x > m)
+say x = 4, so 4 people hunt stag and 1 hunts hare. stag gets caught, each stag hunter gets 1/4.
+now the hare hunter thinks ,they can get better payoff if they switch ,
+so they want to switch to stag. someone always has an incentive to join in. not stable, no PSNE
+
+CASE 2  (x = n)
+all 5 hunt stag, each gets 1/5. since everyone prefers even 1/5 over hare, 
+nobody wants to leave and go catch a hare.
+if you switch to hare ,you lose your 1/5 share and get a worse outcome. no reason to move.
+therefore it is a psne 
+
+CASE 3  (x < m)
+say x = 1, one person hunts stag but you need at least m = 2. 
+stag fails, that person gets nothing while hare hunters are fine.
+that stag hunter immediately thinks they switch. not stable, no PSNE
+
+CASE 4  (x = 0)
+everyone hunts hare. if someone thinks of switching to stag alone, 
+they still can't catch it (need m = 2). they just get nothing. no point switching, PSNE
+
+Part 1 Summary
+just two equilibria : 
+everyone goes for hare, or everyone goes for stag
+ nothing in between holds up.
+
+
+Part 2 : Preference threshold k = 3
+
+CASE 1  (x > k), say x = 4
+4 people hunt stag, each gets 1/4. but since k = 3, they only accept shares of 1/3 or better. 
+1/4 < 1/3, so it's worse than just catching a hare.no PSNE
+
+CASE 2  (x = k = 3)
+3 people hunt stag, each gets 1/3. this is exactly the threshold they're comfortable with.
+a stag hunter thinks of leaving  if they leave, x = 2, stag still gets caught (since m = 2), but now
+ they're getting hare instead of 1/3. they prefer 1/3 over hare. no reason to leave 
+
+a hare hunter thinks of joining  if they join, x = 4, each gets 1/4. but 1/4 < 1/k = 1/3, 
+so they prefer hare. no reason to join 
+
+so its a psne 
+
+CASE 3  (m <= x < k), say x = 2
+now each will get 1/2 >1/3, so hare one will come and join , and make the 
+thing worse for stag ones , no psne 
+
+CASE 4 (x < m), say x = 1
+only 1 person hunts stag but you need at least m = 2. stag fails completely. 
+that hunter gets nothing, meanwhile everyone else has their hare. no psne
+
+CASE 5  (x = 0)
+everyone catches hare. someone thinks of going for stag alone but m = 2, 
+so one person can't catch it. they'd walk away with nothing.
+no point switching.  PSNE
+

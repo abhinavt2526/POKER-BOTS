@@ -1,0 +1,12 @@
+lets try to understand where the game ends 
+
+since at start of game piles are at 10,10 
+since my turn is 2nd , ill try to maintain the symmetry 
+i realised, whatever my opponent does to break that equality, 
+i can always restore it by copying their move. 
+and if the piles are always equal after my turn,
+the only way the game ends is my opponent faces (0,0)
+. so the main aim is to win by 2nd turn is by copying your opponent move 
+
+but if my turn is 1st 
+i cant really win everytime , beacause my opponent can really neutralise my move 
